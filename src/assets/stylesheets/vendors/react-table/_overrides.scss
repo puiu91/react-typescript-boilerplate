@@ -1,0 +1,54 @@
+/**
+ * 1 - Align column headers to the left.
+ * 2 - Vertically align <td> cell content to the center.
+ * 3 - Allow text to expand the cell.
+ */
+
+.ReactTable {
+  .rt-thead {
+    .rt-tr {
+      text-align: left; /* 1 */
+    }
+
+    .rt-th,
+    .rt-td {
+      padding: 10px 5px;
+    }
+
+    .rt-resizable-header {
+      font-weight: bold;
+    }
+
+    .rt-tbody {
+      .rt-td {
+        align-self: center; /* 2 */
+      }
+    }
+
+    .rt-th,
+    .rt-td {
+      white-space: normal; /* 3 */
+      text-overflow: initial; /* 3 */
+    }
+
+    &.-compact {
+      .rt-td {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 0.9rem;
+      }
+    }
+
+    &.-compacted {
+      font-size: 0.8rem;
+      .rt-th,
+      .rt-td {
+        font-size: 0.8rem;
+      }
+      .rt-td {
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+    }
+  }
+}

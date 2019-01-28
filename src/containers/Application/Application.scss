@@ -1,0 +1,48 @@
+/**
+ * Foundation mixins and utils
+ */
+
+@import "~foundation-sites/scss/util/util";
+
+/**
+ * 1 - Explicitly Using 100% instead of 100vh to avoid problems with 100vh only capturing screen.
+ */
+
+.application-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%; /* 1 */
+  min-height: 100vh; /* 1 */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+
+  .application-header {
+    display: block;
+
+    .logo {
+      height: 50px;
+      background: url("../../assets/img/logo.svg") no-repeat;
+      background-size: contain;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 0 auto;
+    background-color: rgb(248, 248, 248);
+  }
+
+  footer {
+    display: flex;
+    padding: 1rem 0;
+    background-color: #515151;
+
+    .copyright {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "Source/*": ["src/*"],
+      "Assets/*": ["src/assets/*"],
+      "Images/*": ["src/assets/img/*"],
+      "Components/*": ["src/components/*"],
+      "Containers/*": ["src/containers/*"],
+      "Pages/*": ["src/pages/*"],
+      "Redux/*": ["src/redux/*"],
+      "Modules/*": ["src/redux/modules/*"],
+      "Router/*": ["src/router/*"],
+      "Utils/*": ["src/utils/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "compileOnSave": false
+}

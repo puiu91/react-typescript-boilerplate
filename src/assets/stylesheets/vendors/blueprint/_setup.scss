@@ -1,0 +1,6 @@
+$icon-font-path: "~@blueprintjs/core/resources/icons"; // see https://github.com/palantir/blueprint/issues/123
+@import "~@blueprintjs/core/src/blueprint"; // requires bourbon 4.3.2 installed as dependency via `npm install bourbon@4.3.2 --save`
+@import "overrides";
+
+// Blueprint Datetime
+@import "~@blueprintjs/datetime/dist/blueprint-datetime.css";

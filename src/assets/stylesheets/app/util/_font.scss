@@ -1,0 +1,42 @@
+/**
+ * Mixins to generate font families
+ */
+
+@mixin fontTrueType($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file + ".ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin fontWoff($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file + ".woff") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin fontWoff2($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file + ".woff2") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+/**
+ * Mixins to adjust font display properties
+ */
+
+@mixin BoldFontWeight() {
+  font-weight: bold;
+}
+
+@mixin NormalFontWeight() {
+  font-weight: normal;
+}

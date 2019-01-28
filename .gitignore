@@ -1,0 +1,12 @@
+# PhpStorm Settings (except deployment settings)
+.idea/*
+!.idea/deployment.xml
+!.idea/webServers.xml
+
+# Public Files
+public/*
+!public/web.config
+!public/index.ejs
+
+# Ignore all node modules
+#node_modules/

@@ -1,0 +1,45 @@
+@import "~foundation-sites/scss/util/util";
+
+/**
+ * Add margins to callouts.
+ * 1 - Makes the margins of the headers match the margins of the rows at the same breakpoints.
+ * 2 - Only target if there is a DOM node beneath the callout.
+ */
+
+.pt-callout {
+  margin: 0 0 0.625rem 0;
+
+  @include breakpoint(640) {
+    margin: 0 0 0.9375rem 0; /* 1 */
+  }
+
+  &:last-child {
+    margin: 0; /* 2 */
+  }
+}
+
+/**
+ * Muted colours
+ */
+
+.pt-text-muted {
+  color: #cacaca;
+  font-weight: normal;
+}
+
+.pt-dark .pt-text-muted {
+  color: #cacaca;
+  font-weight: normal;
+}
+
+/**
+ 1 - Requires `z-index` to appear above the Leaflet map instance. Portals need to appear below toasts.
+ */
+
+.pt-portal {
+  z-index: 9998; /* 1 */
+}
+
+.pt-toast-container {
+  z-index: 9999; /* 1 */
+}

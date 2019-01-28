@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "env", {
+        "browsers": [
+          "not ie < 11" // React doesn't support IE8 anyway
+        ],
+        "modules": false,  // webpack understands the native import syntax, and uses it for tree shaking
+        "loose": true
+      }
+    ],
+    "react" // Transpile React components to JavaScript
+  ],
+  "plugins": [
+    "react-hot-loader/babel", // Enables React code to work with HMR.
+    "transform-object-rest-spread",
+    "transform-class-properties"
+  ]
+}

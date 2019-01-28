@@ -1,0 +1,44 @@
+/* ================================================================================================================== */
+/*
+/* Application Styles
+/*
+/* ================================================================================================================== */
+
+@import "util/font";
+@import "../vendors/foundation/_settings.scss";
+
+/* --------------------------------------------------------------------------------------- */
+/* Fonts
+/* --------------------------------------------------------------------------------------- */
+
+/**
+ *
+ * h1 {
+ *   @include RobotoRegular();
+ * }
+ *
+ */
+
+@include fontTrueType("Roboto-Regular", "../../assets/fonts/Roboto/Roboto-Regular");
+@include fontTrueType("Roboto-Medium", "../../assets/fonts/Roboto/Roboto-Medium");
+
+@mixin RobotoRegular() {
+  font-family: "Roboto-Regular", "Segoe UI", "Helvetica", sans-serif;
+}
+
+@mixin RobotoMedium() {
+  font-family: "Roboto-Medium", "Segoe UI", "Helvetica", sans-serif;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* Design
+/* --------------------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include RobotoRegular();
+}
