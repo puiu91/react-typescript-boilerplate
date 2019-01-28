@@ -1,0 +1,54 @@
+/**
+ *
+ * Here we are copying and rolling our own Foundation scss source file using
+ * `~foundation-sites/scss/foundation.scss` as the template.
+ *
+ * After copying this source file, we updated the paths to target the
+ * `node_modules` directory by prefixing scss file imports using `~`.
+ *
+ * This gives more control over individual components and avoids polluting the
+ * scss namespace with unused variables reducing the chance for collisions with
+ * other frameworks.
+ *
+ * For the purposes of this project, we are only interested in the Foundation
+ * grid and nothing else.
+ *
+ */
+
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.2
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+// Dependencies
+@import "~foundation-sites/scss/vendor/normalize";
+@import "~foundation-sites/_vendor/sassy-lists/stylesheets/helpers/missing-dependencies";
+@import "~foundation-sites/_vendor/sassy-lists/stylesheets/helpers/true";
+@import "~foundation-sites/_vendor/sassy-lists/stylesheets/functions/contain";
+@import "~foundation-sites/_vendor/sassy-lists/stylesheets/functions/purge";
+@import "~foundation-sites/_vendor/sassy-lists/stylesheets/functions/remove";
+@import "~foundation-sites/_vendor/sassy-lists/stylesheets/functions/replace";
+@import "~foundation-sites/_vendor/sassy-lists/stylesheets/functions/to-list";
+
+// Settings
+@import "settings";
+
+// Sass utilities
+@import "~foundation-sites/scss/util/util";
+
+// Global variables and styles
+@import "~foundation-sites/scss/global";
+
+// Grids
+@import "~foundation-sites/scss/grid/grid";
+@import "~foundation-sites/scss/xy-grid/xy-grid";
+
+// Components
+@import '~foundation-sites/scss/components/flex';
+
+// Includes
+@include foundation-global-styles;
+@include foundation-xy-grid-classes;
+@include foundation-flex-classes;

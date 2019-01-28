@@ -4,6 +4,8 @@
     "sourceMap": true,
     "module": "commonjs",
     "target": "es5",
+    "lib": ["es6", "dom"],
+    "skipLibCheck": true,
     "jsx": "react",
     "baseUrl": "./",
     "paths": {
@@ -19,8 +21,6 @@
       "Utils/*": ["src/utils/*"]
     }
   },
-  "include": [
-    "src/**/*"
-  ],
+  "include": ["src/**/*"],
   "compileOnSave": false
 }
